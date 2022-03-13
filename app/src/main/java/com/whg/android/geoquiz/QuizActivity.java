@@ -26,7 +26,7 @@ public class QuizActivity extends AppCompatActivity {
         mTrueButton.setOnClickListener((view)->{
             Toast toast = Toast.makeText(QuizActivity.this,
                     R.string.correct_toast, Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.setGravity(Gravity.CENTER, 0, -200);
             toast.show();
         });
 
@@ -34,7 +34,7 @@ public class QuizActivity extends AppCompatActivity {
         mFalseButton.setOnClickListener((view)->{
             Toast toast =Toast.makeText(QuizActivity.this,
                     R.string.incorrect_toast, Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.setGravity(Gravity.CENTER, 0, -200);
             toast.show();
         });
     }
